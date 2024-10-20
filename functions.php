@@ -19,6 +19,7 @@ function get_all_movies() {
     $args = array(
         'post_type' => 'movie',
         'posts_per_page' => -1,
+        'post_status' => 'publish',
     );
     $posts = get_posts($args);
     $movies = array();
