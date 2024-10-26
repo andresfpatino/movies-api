@@ -38,10 +38,5 @@ function get_all_movies() {
         array_push($movies, $movie_data);
     }
 
-    // Disable cache endoint
-    header("Cache-Control: no-cache, no-store, must-revalidate");
-    header("Pragma: no-cache");
-    header("Expires: 0");
-
     return $movies;
 }
